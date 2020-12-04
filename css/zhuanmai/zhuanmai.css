@@ -1,0 +1,259 @@
+header {
+    width: 1903px;
+    height: 81px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* 顶部导航栏 */
+body,ul {
+    padding: 0;
+    margin: 0;
+}
+.layout-header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #efefef;
+}
+.layout-header-mid {
+    width: 1240px;
+    margin: 0 auto;
+}
+.header-logo {
+    float: left;
+    height: 80px;
+    overflow: hidden;
+}
+.header-logo img {
+    max-width: 125px;
+    margin-top: 28px;
+}
+.layout-header-service {
+    float: right;
+    height: 80px;
+    margin-top:1px;
+}
+.layout-header-service-item  {
+    position: relative;
+    float: left;
+    right: 3px;
+    padding: 26px 8px 0 12px;
+}
+.layout-header-service-search {
+    position: relative;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0;
+    margin: 24px 0 0 18px;
+    width: 170px;
+    text-align: right;
+    word-break: keep-all;
+    white-space: nowrap;
+    border: 1px solid rgba(0,0,0,.15);
+    line-height: 28px;
+}
+.service-input {
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+    width: 125px;
+    height: 20px;
+    margin-left: 15px;
+    transition: width .5s;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+.layout-header-sosuo {
+    width: 17px;
+    margin-top: 7px;
+    margin-right: 6px;
+}
+.layout-header-service-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #666;
+}
+
+.layout-header-service-avatar {
+    width: 100%;
+    height: 100%;
+}
+.service-car {
+    padding-left: 0;
+    padding-right: 0;
+}
+.service-car-1 {
+    width: 34px;
+    height: 34px;
+    overflow: unset;
+}
+.service-car-2 {
+    width: 30px;
+    height: 30px;
+}
+.service-car-num {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    height: 16px;
+    min-width: 8px;
+    border-radius: 50%;
+    background: #F10000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+    text-indent: 0;
+    font-weight: 300;
+    line-height: 15px;
+}
+.layout-header-nav {
+    float: right;
+    font-size: 14px;
+    position: absolute;
+    width: 720px;
+    height: 80px;
+    line-height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.layout-header-nav a:hover {
+    color: #008cff;
+}
+.layout-header-nav-item {
+    float: left;
+    margin: 0 20px 0 15px;
+}
+.layout-header-nav-link {
+    color: #333;
+    height: 80px;
+    line-height: 80px;
+
+}
+/* 主体部分 */
+.contanier {
+    color: #333;
+    min-width: 1280px;
+    position: relative;
+}
+.index-banner {
+    height: 446px;
+    width: 100%;
+    background: #f7f7f7;
+}
+.center-wrapper {
+    height: 100%;
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+.index-img {
+    width: 100%;
+    height: 100%;
+}
+.tab-container {
+    border-bottom: #e4e4e4 2px solid;
+    padding: 70px 0 5px;
+}
+.tab-1 {
+    margin-left: 0;
+    position: relative;
+    border-bottom: transparent 3px solid;
+    cursor: pointer;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+.tab-border {
+    border-color: #008cff;
+    color: #008cff;
+} 
+.tab-panel0 {
+    min-height: 200px;
+}
+.addr-choose {
+    font-size: 16px;
+    padding-top: 20px;
+    position: relative;
+    height: 40px;
+ 
+}
+.addr-choose option{
+    height: 38px;
+    line-height: 41px;
+    float: left;
+    margin-right: 2px;
+}
+.addr-select {
+    font-size: 16px;
+    border: #e4e4e4 1px solid;
+    width: 107px;
+    position: relative;
+    padding-left: 9px;
+    padding-right: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.province-list {
+    left: 82px;
+}
+
+.store-list {
+    overflow: hidden;
+    font-size: 16px;
+    padding-bottom: 69px;
+    padding-top: 10px;
+    border-bottom: #e4e4e4 1px solid;
+    height: 100%;
+    margin-top: -150px;
+}
+.store-panel {
+    width: 120%;
+}
+.store-item {
+    float: left;
+    width: 350px;
+    margin-right: 93px;
+    height: 188px;
+}
+.store-title {
+    color: #008cff;
+    font-size: 20px;
+    padding-top: 62px;
+    padding-bottom: 7px;
+    display: inline-block;
+    height: 31px;
+}
+.more-link{
+    font-size: 18px;
+    padding: 22px 0 98px;
+}
+.link-right {
+    float: right;
+
+}
+.more-link span {
+    padding-right: 27px;
+}
+.link-right a {
+    margin-left: 7px;
+    color: #008cff;
+    border: #008cff 1px solid;
+    font-size: 16px;
+    display: inline-block;
+    width: 136px;
+    padding: 7px 0;
+    text-align: center;
+}

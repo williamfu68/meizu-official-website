@@ -1,0 +1,293 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.index {
+    width: 100vw;
+    height: 4437px;
+}
+
+.section-1 {
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+    padding: 0;
+    background: url(../../images/dzfuwu/top.jpg) top no-repeat;
+    ;
+}
+
+
+/* 顶部导航栏 */
+
+.top {
+    height: 90px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-1 .container {
+    width: 1200px;
+    height: 680px;
+}
+
+.container {
+    width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.container-2 {
+    width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* 图标 */
+
+.logo {
+    margin: 32px 0 0 3px;
+    width: 125px;
+    float: left;
+}
+
+.logo-1 {
+    width: 100%;
+}
+
+
+/* 导航栏文字 */
+
+.meizu {
+    float: right;
+    height: 90px;
+}
+
+.meizu a {
+    color: hsla(0, 0%, 100%, .5);
+    line-height: 90px;
+    float: left;
+    margin: 0 21px;
+    text-decoration: none;
+}
+
+.meizu a:hover {
+    color: #fff;
+}
+
+.meizu .a-1 {
+    color: #fff;
+}
+
+.tit-cont {
+    position: absolute;
+    top: 293px;
+    left: 20px;
+}
+
+.tit-1 {
+    font-size: 54px;
+    color: #fff;
+    font-weight: 900!important;
+}
+
+.tit-2 {
+    font-size: 22px;
+    color: hsla(0, 0%, 100%, .8);
+    margin-top: 16px;
+    text-align: left;
+    font-weight: 400!important;
+}
+
+.section.same-section {
+    min-width: 1160px;
+    padding: 20px;
+}
+
+.section-2 {
+    height: 700px;
+    margin-top: 150px;
+}
+
+.tit-cont2 {
+    margin-top: 199px;
+    float: left;
+}
+
+.tit-3 {
+    font-size: 50px;
+    color: #333;
+    font-weight: 700;
+}
+
+.tit-4 {
+    font-size: 22px;
+    color: #999;
+    margin-top: 16px;
+    text-align: left;
+}
+
+.img-1 {
+    width: 724px;
+    height: 546px;
+    float: right;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.grid-box {
+    margin-top: 27px;
+}
+
+.item {
+    width: 232px;
+    height: 24px;
+    float: left;
+    margin-top: 26px;
+}
+
+
+/* 蓝色圆点 */
+
+.cir {
+    float: left;
+}
+
+.c1 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: #e0f2ff;
+    position: relative;
+}
+
+.c2 {
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    border-radius: 100%;
+    border: 3px solid #2ca7ff;
+}
+
+
+/* 蓝色圆点后的文字 */
+
+.text {
+    display: inline-block;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 0;
+    margin-left: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    height: 24px;
+}
+
+.tit-cont3 {
+    margin-top: 199px;
+    float: right;
+}
+
+.img-2 {
+    width: 724px;
+    height: 546px;
+    float: left;
+}
+
+.section-3 {
+    height: 700px;
+    margin-top: 150px;
+}
+
+.section-4 {
+    height: 700px;
+    margin-top: 120px;
+}
+
+.section-5 {
+    margin-top: 240px;
+}
+
+.section-5 .item {
+    background-image: linear-gradient(-45deg, rgba(235, 247, 255, .1) 50%, #ebf7ff);
+    border-radius: 12px;
+    width: 386.66667px;
+    height: 437px;
+    float: left;
+    margin-right: 20px;
+}
+
+.section-5 .item:last-child {
+    margin-right: 0;
+}
+
+.tit-5 {
+    font-size: 32px;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 48px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    height: 24px;
+    margin-top: 26px;
+}
+
+.f1 {
+    float: left;
+}
+
+.section-5 .item ul.circle1 .circle {
+    margin-left: 80px;
+}
+
+
+/* 底部 */
+
+.bottom {
+    height: 250px;
+    width: 100%;
+    margin-top: 650px;
+    background: url(../../images/dzfuwu/bg4.jpg) top;
+    overflow: hidden;
+}
+
+.b-tit {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    font-weight: 500;
+}
+
+.b-tit2 {
+    width: 140px;
+    height: 46px;
+    line-height: 48px;
+    font-size: 16px;
+    border: 1px solid hsla(0, 0%, 100%, .8);
+    border-radius: 2px;
+    display: block;
+    margin: 40px auto auto;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}

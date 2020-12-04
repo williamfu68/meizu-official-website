@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://store.res.meizu.com/layout/img/favicon-90c2e618ff.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://store.res.meizu.com/layout/img/favicon-90c2e618ff.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://store.res.meizu.com//layout/css/layout-80bd8016a9.css" />
+    <link href="https://store.res.meizu.com/order/css/cart-189e8e56b7.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/shopcar/shopcar.css">
+    <title>购物车</title>
+</head>
+
+<body>
+    <script>
+        var layoutHeaderData = false;
+    </script>
+    <div class="layout-header clearfix layout-header-order" id="layoutHeader">
+        <div class="mzcontainer">
+            <div class="layout-header-logo">
+                <a target="_blank" href="http://www.meizu.com" target="_blank" class="layout-header-logo-link" alt="魅族科技" data-mdesc="购物车页头logo" data-mtype="store_cart_yt_logo" data-bh="click_store_cart_yt_logo">
+                    <img src="../../images/shopcar/meizu.png" target="_blank" style="max-width:125px; margin-top:28px;">
+
+                </a>
+            </div>
+            <ul class="layout-header-bread">
+                <li class="layout-header-bread-block active">购物车</li>
+                <li class="layout-header-bread-block ">确认订单</li>
+                <li class="layout-header-bread-block ">在线支付</li>
+                <li class="layout-header-bread-block ">完成</li>
+            </ul>
+            <ul class="layout-header-right">
+                <li class="layout-header-right-item">
+                    <a class="layout-header-right-link" href="//ordercenter.meizu.com/list/index.html" target="_blank" data-mdesc="购物车页头-我的订单" data-mtype="store_cart_yt_order" data-bh="click_store_cart_yt_order">我的订单</a>
+                </li>
+                <li class="layout-member signin">
+                    <a class="layout-member-link" target="_blank" href="http://me.meizu.com/member/index" target="_blank"><span class="layout-member-username" id="topbarUser"></span>的商城<i class="layout-member-triangle"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <div class="cart-login-tips" id="cartLoginTips">
+            <i class="cart-login-tips-icon"></i> 您还没有登录！登录后可显示您账号中已加入的商品哦~
+            <a class="mz-btn s success" href="javascript:void(0);" data-mdesc="登录提示" data-mtype="store_cart_tip_login" data-bh="click_store_cart_tip_login">
+            去登录
+          </a>
+            <div class="close-tips" id="closeTips"></div>
+        </div>
+
+        <div class="mzcontainer">
+            <table class="cart-header">
+                <tr>
+                    <td class="cart-col-select">
+                        <div class="cart-select-all JSelectAll" data-mdesc="全选按钮" data-mtype="store_cart_all" data-bh="click_store_cart_all">
+                            <div class="mz-checkbox"></div>
+                            <span class="cart-select-title">全选</span>
+                        </div>
+                    </td>
+                    <td class="cart-col-price">单价(元)</td>
+                    <td class="cart-col-number">数量</td>
+                    <td class="cart-col-total">小计(元)</td>
+                    <td class="cart-col-ctrl" id="J-cartHearCtrl">编辑</td>
+                </tr>
+            </table>
+            <ul class="cart-merchant-list" id="merchantList">
+                <li class="cart-merchant">
+                    <div class="cart-merchant-header">
+                        <div class="cart-select-all">
+                            <div class="mz-checkbox checked"></div>
+                            <span class="cart-select-title">魅族</span>
+                        </div>
+                        <div class="cart-select-fee show">
+                            <span class="cart-free">已免运费</span>
+                        </div>
+                    </div>
+                    <table class="cart-merchant-body">
+                        <tr class="cart-product hasTheBinder">
+                            <td class="cart-col-select">
+                                <div class="mz-checkbox checked"></div>
+                                <a href="https://detail.meizu.com/item/meizu17pro.html?skuId=13253" target="_blank" class="cart-product-link">
+                                    <img src="../../images/shopcar/mz17.png" alt="图片显示失败" target="_blank" class="cart-product-img">
+                                </a>
+                                <a href="https://detail.meizu.com/item/meizu17pro.html?skuId=13253" class="cart-product-link cart-product-info cart-product-info" target="_blank">
+                                    <p class="cart-product-item-name">魅族 17 Pro</p>
+                                    <p class="cart-product-desc">全网通公开版 月白天青 8+128GB</p>
+                                </a>
+                            </td>
+                            <td class="cart-col-price">
+                                <p>
+                                    <span class="cart-product-price">
+                                        4299.00
+                                    </span>
+                                </p>
+                            </td>
+                            <td class="cart-col-number">
+                                <div class="cart-product-number-adder">
+                                    <p class="cart-product-number-max show"></p>
+                                    <div class="mz-adder">
+                                        <button class="mz-adder-subtract"></button>
+                                        <div class="mz-adder-num">
+                                            <input type="text" class="mz-adder-input" value="1">
+                                        </div>
+                                        <button class="mz-adder-add"></button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="cart-col-total">
+                                <span class="cart-product-price total main-goods">
+                                    4299.00
+                                </span>
+                            </td>
+                            <td class="cart-col-ctrl">
+                                <div class="cart-product-remove "></div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="mzcontainer">
+                <div class="cart-footer-left">
+                    <div class="cart-select-all JSelectAll" data-mdesc="全选按钮" data-mtype="store_cart_all" data-bh="click_store_cart_all">
+                        <div class="mz-checkbox"></div>
+                        <span class="cart-select-title">全选</span>
+                    </div>
+                    <span class="cart-remove-selected" data-mdesc="删除选中商品" data-mtype="store_cart_batch" data-bh="click_store_cart_batch" id="removeSelected">删除选中的商品</span>
+                    <span class="cart-footer-count">
+                共<span class="cart-footer-num" id="totalCount">0</span>件商品， 已选择
+                    <span class="cart-footer-num blue" id="totalSelectedCount">0</span>件
+                    </span>
+                </div>
+                <div class="cart-footer-right">
+                    <span class="cart-footer-sum">
+                已优惠<span class="cart-footer-num red" id="totalDiscount">0.00</span>元， 合计(不含运费)：
+                    <span class="cart-footer-total" id="totalPrice">0.00</span>
+                    </span>
+                    <a href="../../html/orderConfirm/orderConfirm.html" target="_blank" class="mz-btn success to-order-btn" id="cartSubmit" data-mdesc="去结算按钮" data-mtype="store_cart_checkout" data-bh="click_store_cart_checkout">去结算
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息栏 -->
+    <div class="meizu-footer-container">
+        <div class="meizu-footer-wrap">
+            <div class="meizu-top-row">
+                <div class="meizu-top-service">
+                    <ul class="clear">
+                        <li>
+                            <a target="_blank" href="http://service.meizu.com/help/delivery.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/2c69bf7c-2d29-4fd4-852e-0aa497f36f51.png" alt="图片加载失败">
+                                <span>满80免运费</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://store.meizu.com/marrive/summary.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/d28eac8b-b915-49dc-9dbd-80884a07d44f.png" alt="图片加载失败">
+                                <span>100+ 城市次日送达</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/b21f3e65-f7f4-4693-914c-c070faf96770.png" alt="图片加载失败">
+                                <span>7天无理由退货</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/1998f0da-a439-4e07-9736-e6a1c39fb0ae.png" alt="图片加载失败">
+                                <span>15天换货保障</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/420825c1-4763-436d-b3e1-721651ccc70c.png" alt="图片加载失败">
+                                <span>1年免费保修</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/1c5cfeff-1b35-499e-bc2a-1fd29305be69.png" alt="图片加载失败">
+                                <span>上门快修</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="meizu-top-contact">
+                    <span>周一至周日 8:00-20:00</span>
+                    <p>400-788-3333</p>
+                    <a href="http://url.meizu.com/ols_PC" target="_blank">在线客服</a>
+                </div>
+            </div>
+            <div class="meizu-bottom-row">
+                <div class="meizu-left-info">
+                    <ul class="clear">
+                        <li><a target="_blank" href="https://www.meizu.com/about.html#know">了解魅族</a></li>
+                        <li><a target="_blank" href="http://hr.meizu.com/">加入我们</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/about.html#contact">联系我们</a></li>
+                        <li><a target="_blank" href="https://www.flyme.cn/index.html">Flyme</a></li>
+                        <li><a target="_blank" href="http://bbs.meizu.cn/">魅族社区</a></li>
+                        <li><a target="_blank" href="https://meizu.tmall.com/">天猫旗舰店</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/feedback.html">问题反馈</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/authorization/index.html">线上销售授权名单公示</a></li>
+                        <li><a target="_blank" href="https://cimg2.res.meizu.com/www/meizu/publish_license.pdf">出版物经营许可证</a></li>
+                        <li class="last">
+                            <span class="icon-lang">
+                            <a target="_blank" href="https://www.meizu.com/#">
+                                <i></i>
+                                <span>简体中文</span>
+                            </a>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="meizu-left-copy">
+                        <span class="left-text">&copy; 2020 Meizu Telecom Equipment Co.,Ltd. All rights reserved.</span>
+                        <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备13003602号</a>
+                        <a target="_blank" href="https://www.meizu.com/static/footer/images/icp2.jpg">合字B2-20170010 </a>
+                        <a target="_blank" href="https://www.meizu.com/static/footer/images/com_licence.jpg">营业执照</a>
+                        <a target="_blank" href="https://www.meizu.com/legal.html">法律声明</a>
+                        <a class="right-text" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496009">
+                            <span class="footer-info-record">
+                                <i></i>
+                            <span>粤公网安备 44049102496009 号</span>
+                            </span>
+                        </a>
+                        <a class="footer-info-license" target="_blank" href="http://210.76.65.188/">
+                            <i></i>
+                        </a>
+                        <a class="footer-info-wel" target="_blank" href="http://210.76.65.188/webrecord/innernet/Welcome.jsp?bano=4404013010531">
+                            <i></i>
+                        </a>
+                        <a class="footer-info-trust" target="_blank" href="https://credit.szfw.org/CX20151204012550820380.html">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="meizu-right-info">
+                    <a href="" target="_blank" class="subscribe-img1">
+                        <img src="https://fms.res.meizu.com/dms/2019/01/07/26b50023-fde7-4f23-ae32-3aa39585f4c4.png" alt="图片加载失败">
+                        <i></i>
+                    </a>
+                    <a href="" target="_blank" class="subscribe-img2">
+                        <img src="https://fms.res.meizu.com/dms/2019/01/07/33474117-9a2d-455d-a8ff-997355238400.jpg" alt="图片加载失败">
+                        <i></i>
+                    </a>
+                    <a target="_blank" href="https://user.qzone.qq.com/2762957059" class="subscribe-img3">
+                        <i></i>
+                    </a>
+                    <a target="_blank" href="https://weibo.com/meizumobile" class="subscribe-img4">
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Maisle/Maisle.css">
+    <script src="../../js/public/jquery-3.4.1.min.js"></script>
+    <script src="../../js/index/index.js"></script>
+    <title>M码通道</title>
+</head>
+
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="meizu-header-container clear">
+
+        <!-- logo -->
+        <div class="meizu-header-logo">
+            <a href="https://www.meizu.com/index.html">
+                <svg fill="#008cff" version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="125px" height="80px" viewBox="17.318 5.824 402.048 73.556" enable-background="new 17.318 5.824 402.048 73.556">
+                    <path d="M321.513,5.824H256.91v12.878h51.478l-49.294,44.581c-8.227,7.023-2.872,16.096,3.958,16.096h65.337V66.472 h-52.117l48.964-44.554C333.52,14.473,328.535,5.824,321.513,5.824"></path>
+                    <rect x="226.517" y="5.824" width="14.426" height="73.556"></rect>
+                    <path d="M104.296,5.824h-71.36c-8.576,0-15.618,7.012-15.618,15.588v57.967H31.14V23.743 c0-2.711,2.208-5.041,4.92-5.041h25.31v60.677h14.428V18.702h25.312c2.712,0,4.919,2.329,4.919,5.041v55.636h13.86V21.416 C119.888,12.841,112.872,5.824,104.296,5.824"></path>
+                    <path d="M148.765,23.614c0-2.712,2.199-4.912,4.911-4.912h55.909V5.824h-58.236c-8.576,0-15.592,7.016-15.592,15.592 v42.37c0,8.576,7.017,15.592,15.592,15.592h58.236V66.5h-55.909c-2.711,0-4.911-2.199-4.911-4.912V49.042h58.43V36.117h-58.43 V23.614z"></path>
+                    <path d="M405.506,5.824v55.637c0,2.71-2.22,5.039-4.931,5.039h-39.77c-2.711,0-4.892-2.328-4.892-5.039V5.824h-13.86 v57.963c0,8.576,7.018,15.592,15.592,15.592h46.127c8.575,0,15.592-7.017,15.592-15.592V5.824H405.506z"></path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- 导航链接 -->
+        <div class="meizu-header-nav">
+            <nav>
+                <ul class="clear">
+                    <li>
+                        <a href="https://lists.meizu.com/page/list?categoryid=76" target="_blank">手机</a>
+
+                    </li>
+                    <li>
+                        <a href="https://lists.meizu.com/page/list/?categoryid=231" target="_blank">声学</a>
+                    </li>
+                    <li>
+                        <a href="https://lists.meizu.com/page/list?categoryid=186" target="_blank">配件</a>
+                    </li>
+                    <li>
+                        <a href="https://lists.meizu.com/page/list/?categoryid=222" target="_blank">生活</a>
+                    </li>
+                    <li>
+                        <a href="https://www.flyme.cn/" target="_blank">Flyme</a>
+                    </li>
+                    <li>
+                        <a href="http://care.meizu.com/" target="_blank">服务</a>
+                    </li>
+                    <li>
+                        <a href="http://retail.meizu.com/index.html" target="_blank">专卖店</a>
+                    </li>
+                    <li>
+                        <a href="https://bbs.meizu.cn/" target="_blank">社区</a>
+                    </li>
+                    <li>
+                        <a href="https://business.meizu.com/" target="_blank">企业服务</a>
+                    </li>
+                    <li>
+                        <a href="https://www.meizu.com/#" target="_blank">APP下载</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="meizu-header-right clear">
+            <div class="meizu-header-search">
+                <input type="text" placeholder="魅族 17">
+                <svg width="17px" height="14px" viewBox="0 0 17 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-1469.000000, -32.000000)" fill="#666666" fill-rule="nonzero">
+                            <g>
+                                <g>
+                                    <g transform="translate(1323.000000, 25.000000)">
+                                        <g transform="translate(139.000000, 0.000000)">
+                                            <path d="M14,20.75 C10.2720779,20.75 7.25,17.7279221 7.25,14 C7.25,10.2720779 10.2720779,7.25 14,7.25 C17.7279221,7.25 20.75,10.2720779 20.75,14 C20.75,17.7279221 17.7279221,20.75 14,20.75 Z M14,19.25 C16.8994949,19.25 19.25,16.8994949 19.25,14 C19.25,11.1005051 16.8994949,8.75 14,8.75 C11.1005051,8.75 8.75,11.1005051 8.75,14 C8.75,16.8994949 11.1005051,19.25 14,19.25 Z" id="Oval"></path>
+                                            <path d="M19.0640714,18.1103001 C18.7270119,17.8695434 18.6489432,17.4011308 18.8896999,17.0640714 C19.1304566,16.7270119 19.5988692,16.6489432 19.9359286,16.8896999 L23.4359286,19.3896999 C23.7729881,19.6304566 23.8510568,20.0988692 23.6103001,20.4359286 C23.3695434,20.7729881 22.9011308,20.8510568 22.5640714,20.6103001 L19.0640714,18.1103001 Z" id="Line-2"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- 用户 -->
+            <div class="meizu-header-user">
+                <!-- <span class="iconfont icon-user"></span> -->
+                <div class="meizu-header-img">
+                    <img src="" alt="">
+                </div>
+                <div class="meizu-header-user-dropdown">
+                    <div>
+                        <ul class="clear">
+                            <li><a href="" target="_blank">立即登录</a></li>
+                            <li><a href="" target="_blank">立即注册</a></li>
+                            <li><a href="" target="_blank">个人中心</a></li>
+                            <li><a href="" target="_blank">我的订单</a></li>
+                            <li><a href="" target="_blank">M码通道</a></li>
+                            <li><a href="" target="_blank">退出登录</a></li>
+                        </ul>
+                    </div>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+            <a href="" target="_blank" style="float:left;">
+                <div class="meizu-header-cart">
+                    <em>1</em>
+                </div>
+            </a>
+
+            <!-- 购物车 -->
+            <div class="store-cart">
+                <div class="store-cart-list">
+                    <p class="store-cart-title secondary">最近加入的商品</p>
+                    <div class="store-car-list-goods clear">
+                        <div>
+                            <img src="../../images/top-icon/cp02.jpg " alt="图片加载失败">
+                        </div>
+                        <div>
+                            <p>
+                                <a href="" target="_blank">【老用户专享】魅族17</a>
+                            </p>
+                            <p>
+                                <a href="" target="_blank" class="secondary">全网通公开版</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="store-car-list-price">
+                        <span>￥3699</span> &times;
+                        <span>1</span>
+                    </div>
+                </div>
+                <div class="store-cart-footer">
+                    <div class="info">
+                        共 <span class="total ">1<span> 件商品 <span class = "secondary ">( <span class = "count ">0</span> 件 失 效 )</span>
+                    </div>
+                    <div><a href="" target="_blank" class="success">去购物车</a></div>
+                </div>
+                <!-- 购物车三角 -->
+                <div class="triangle"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 顶部商品下拉菜单 -->
+    <div class="meizu-header-dropdown clear">
+
+        <!-- 手机 -->
+        <div class="meizu-header-dropdown-content">
+
+            <a href="" target="_blank" class="meizu-header-dropdown-item">
+                <div class="meizu-header-dropdown-goods phone-goods1 "></div>
+                <div class="description" title="魅族 17「AG梦幻独角兽」">魅族 17「AG梦幻独角兽」</div>
+                <div class="price ">￥3699</div>
+            </a>
+
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods phone-goods2 "></div>
+                <div class="description">魅族 17「AG星际灰」</div>
+                <div class="price ">￥3699</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods phone-goods3 "></div>
+                <div class="description">魅族 17「AG原野绿」</div>
+                <div class="price ">￥3699</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods phone-goods4 "></div>
+                <div class="description" title="魅族 17 pro「月白天青」">魅族 17 pro「月白天青」</div>
+                <div class="price ">￥4299</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods phone-goods5 "></div>
+                <div class="description">魅族 17 pro「天青」</div>
+                <div class="price ">￥4299</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods phone-goods6 "></div>
+                <div class="description">魅族 17 pro「乌金」</div>
+                <div class="price ">￥4299</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods phone-goods7 "></div>
+                <div class="description">魅族 17 pro「定白」</div>
+                <div class="price ">￥4299</div>
+            </a>
+        </div>
+
+        <!-- 声学 -->
+        <div class="meizu-header-dropdown-content wider ">
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods1 "></div>
+                <div class="description">魅族 HD60 降噪耳机</div>
+                <div class="price ">￥1099</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods2 "></div>
+                <div class="description" title="魅族 HD60 头戴式降噪耳机">魅族 HD60 头戴式降噪耳机</div>
+                <div class="price ">￥499</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods3 "></div>
+                <div class="description">魅族 HIFI 解码耳放</div>
+                <div class="price ">￥169</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods4 "></div>
+                <div class="description" title="魅族 EP63NC 无限降噪耳机">魅族 EP63NC 无限降噪耳机</div>
+                <div class="price ">￥399</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods5 "></div>
+                <div class="description">魅族 EP3C 耳机</div>
+                <div class="price ">￥129</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods6 "></div>
+                <div class="description" title="魅族 POP2 真无线蓝牙耳机">魅族 POP2 真无线蓝牙耳机</div>
+                <div class="price ">￥399</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods7 "></div>
+                <div class="description" title="魅族 EP52 Lite 蓝牙耳机">魅族 EP52 Lite 蓝牙耳机</div>
+                <div class="price ">￥129</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods earphone-goods8 "></div>
+                <div class="description" title="MEIZU UR 高端定制耳机">MEIZU UR 高端定制耳机</div>
+                <div class="price ">￥200</div>
+            </a>
+        </div>
+
+        <!-- 配件 -->
+        <div class="meizu-header-dropdown-content wider ">
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods1 "></div>
+                <div class="description" title="魅族超充 USB-C 移动电源">魅族超充 USB-C 移动电源</div>
+                <div class="price ">￥169</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods2 "></div>
+                <div class="description" title="魅族 超充 GaN 三口充电器">魅族 超充 GaN 三口充电器</div>
+                <div class="price ">￥199</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods3 "></div>
+                <div class="description">魅族无线超充板</div>
+                <div class="price ">￥169</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods4 "></div>
+                <div class="description" title="Pandaer「17」夏日系列 手机壳">Pandaer「17」夏日系列 手机壳</div>
+                <div class="price ">￥69</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods5 "></div>
+                <div class="description" title="Pandaer「17」系列 手机壳">Pandaer「17」系列 手机壳</div>
+                <div class="price ">￥49</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods6 "></div>
+                <div class="description" title="魅族 17 系列 液态硅胶壳">魅族 17 系列 液态硅胶壳</div>
+                <div class="price ">￥89</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods7 "></div>
+                <div class="description">魅族 Type-C数据库</div>
+                <div class="price ">￥49</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods part-goods8 "></div>
+                <div class="description">魅族双 USB-C 快充线 </div>
+                <div class="price ">￥49</div>
+            </a>
+        </div>
+
+        <!-- 生活 -->
+        <div class="meizu-header-dropdown-content wider ">
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods1 "></div>
+                <div class="description">Lifeme 双肩包</div>
+                <div class="price ">￥299</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods2 "></div>
+                <div class="description" title="Pandaer「17」系列 T恤">Pandaer「17」系列 T恤</div>
+                <div class="price ">￥269</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods3 "></div>
+                <div class="description">Pandaer「17」系列 </div>
+                <div class="price ">￥99</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods4 "></div>
+                <div class="description">【新品】Lifeme 相机包</div>
+                <div class="price ">￥129</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods5 "></div>
+                <div class="description" title="魅族防飞溅声波电动牙刷">魅族防飞溅声波电动牙刷</div>
+                <div class="price ">￥299</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods6 "></div>
+                <div class="description">魅族极简都市双肩包</div>
+                <div class="price ">￥179</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods7 "></div>
+                <div class="description">Pandaer readnap</div>
+                <div class="price ">￥199</div>
+            </a>
+            <a href="" target="_blank" class="meizu-header-dropdown-item ">
+                <div class="meizu-header-dropdown-goods life-goods8 "></div>
+                <div class="description">Flyme 8 暗夜流光卫衣</div>
+                <div class="price ">￥269</div>
+            </a>
+        </div>
+
+        <!-- Flyme -->
+        <div class="meizu-header-dropdown-content"></div>
+
+        <!-- 服务 -->
+        <div class="meizu-header-dropdown-content"></div>
+
+        <!-- 专卖店 -->
+        <div class="meizu-header-dropdown-content"></div>
+
+        <!-- 社区 -->
+        <div class="meizu-header-dropdown-content"></div>
+
+        <!-- 企业服务 -->
+        <div class="meizu-header-dropdown-content"></div>
+
+        <!-- APP下载 -->
+        <div class="meizu-header-dropdown-content download-qrcode ">
+            <div>
+                <img src="https://fms.res.meizu.com/dms/2020/07/29/20dbe12b-c97c-4556-ac76-bce1d6457a6a.jpg " alt="图片加载失败图片加载失败">
+            </div>
+            <div class="meizu-android-download-link1 ">
+                <a href="https://hd.meizu.com/share/app_download.html " target="_blank ">
+                    <img src="https://cimg2.res.meizu.com/www/201807/cn/fACDE85H10zLMNOPywSTUVrXnlkbjiu9.png " alt="图片加载失败图片加载失败">
+                </a>
+            </div>
+            <div class="meizu-android-download-link2">
+                <a href="http://app.flyme.cn/apps/public/index " target="_blank ">
+                    <img src="https://cimg2.res.meizu.com/www/201807/cn/fACDE85H10zLMNOPywSTUVrXnlkbjiu9.png " alt="图片加载失败图片加载失败">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- boby -->
+    <div class="container">
+        <div class="all">
+            <ul class="mcode-crumbs clearfix">
+                <li class="mcode-crumbs-block"><a href="#" class="mcode-crumbs-link">首页</a>
+                </li>
+                <li class="mcode-crumbs-block active"><a href="" class="mcode-crumbs-link">M码通道</a></li>
+            </ul>
+            <!-- M码登陆 -->
+            <div class="login">
+                <div class="login-left">
+                    <div class="login-left-title">
+                        欢迎您使用M码购买通道
+                    </div>
+
+                    <div class="mcode-form-row clearfix">
+                        <div class="mcode-form-title">输入M码：</div>
+                        <div class="mcode-form-content">
+                            <div class="mz-input-warp" id="codeWarp">
+                                <input type="text" class="mz-input" placeholder="请输入M码">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mcode-form-row clearfix">
+                        <div class="mcode-form-title">验证码：</div>
+                        <div class="mcode-form-content">
+                            <div class="mcode-form-submit">
+                                <div class="mz-btn success" id="nextStep">下一步</div>
+                            </div>
+                            <div class="mcode-form-captcha" id="captcha">
+                                <div class="mz-captcha-input" tabindex="11" hidefocus="true" style="width: 212px;">点击完成验证</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-img"></div>
+            </div>
+            <div class="mcode-desc">
+                <div class="mcode-desc-title">
+                    M码类型
+                </div>
+                <ul class="mcode-desc-list">
+                    <li class="mcode-desc-block">
+                        <div class="mcode-desc-block-title">
+                            通兑型 M 码
+                        </div>
+                        <div class="mcode-desc-block-content">
+                            用前需激活，选定一种机型，激活后无法变更，激活后可在 M 码有效期内，购买任何可选机型
+                            <br> 一个 M 码仅能使用一次，下单后作废，有效期及其他注意事项，请留意每次发布公告
+                            <br> 为防止黄牛恶意购买，保护正常用户的利益，购买过程中收货地址与联系电话一经填写，将不可修改。
+                        </div>
+                    </li>
+                    <li class="mcode-desc-block">
+                        <div class="mcode-desc-block-title">
+                            特选型 M 码
+                        </div>
+                        <div class="mcode-desc-block-content">
+                            直接使用即可，有效期内，可以购买限定数量的指定机型
+                            <br> 一个 M 码仅能使用一次，下单后作废，有效期及其他注意事项，请留意每次发布公告
+                            <br> 为防止黄牛恶意购买，保护正常用户的利益，购买过程中收货地址与联系电话一经填写，将不可修改。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息栏 -->
+    <div class="meizu-footer-container">
+        <div class="meizu-footer-wrap">
+            <div class="meizu-top-row">
+                <div class="meizu-top-service">
+                    <ul class="clear">
+                        <li>
+                            <a target="_blank" href="http://service.meizu.com/help/delivery.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/2c69bf7c-2d29-4fd4-852e-0aa497f36f51.png" alt="图片加载失败">
+                                <span>满80免运费</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://store.meizu.com/marrive/summary.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/d28eac8b-b915-49dc-9dbd-80884a07d44f.png" alt="图片加载失败">
+                                <span>100+ 城市次日送达</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/b21f3e65-f7f4-4693-914c-c070faf96770.png" alt="图片加载失败">
+                                <span>7天无理由退货</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/1998f0da-a439-4e07-9736-e6a1c39fb0ae.png" alt="图片加载失败">
+                                <span>15天换货保障</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/420825c1-4763-436d-b3e1-721651ccc70c.png" alt="图片加载失败">
+                                <span>1年免费保修</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/1c5cfeff-1b35-499e-bc2a-1fd29305be69.png" alt="图片加载失败">
+                                <span>上门快修</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="meizu-top-contact">
+                    <span>周一至周日 8:00-20:00</span>
+                    <p>400-788-3333</p>
+                    <a href="http://url.meizu.com/ols_PC" target="_blank">在线客服</a>
+                </div>
+            </div>
+            <div class="meizu-bottom-row">
+                <div class="meizu-left-info">
+                    <ul class="clear">
+                        <li><a target="_blank" href="https://www.meizu.com/about.html#know">了解魅族</a></li>
+                        <li><a target="_blank" href="http://hr.meizu.com/">加入我们</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/about.html#contact">联系我们</a></li>
+                        <li><a target="_blank" href="https://www.flyme.cn/index.html">Flyme</a></li>
+                        <li><a target="_blank" href="http://bbs.meizu.cn/">魅族社区</a></li>
+                        <li><a target="_blank" href="https://meizu.tmall.com/">天猫旗舰店</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/feedback.html">问题反馈</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/authorization/index.html">线上销售授权名单公示</a></li>
+                        <li><a target="_blank" href="https://cimg2.res.meizu.com/www/meizu/publish_license.pdf">出版物经营许可证</a></li>
+                        <li class="last">
+                            <span class="icon-lang">
+                        <a target="_blank" href="https://www.meizu.com/#">
+                            <i></i>
+                            <span>简体中文</span>
+                            </a>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="meizu-left-copy">
+                        <span class="left-text">&copy; 2020 Meizu Telecom Equipment Co.,Ltd. All rights reserved.</span>
+                        <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备13003602号</a>
+                        <a target="_blank" href="https://www.meizu.com/static/footer/images/icp2.jpg">合字B2-20170010 </a>
+                        <a target="_blank" href="https://www.meizu.com/static/footer/images/com_licence.jpg">营业执照</a>
+                        <a target="_blank" href="https://www.meizu.com/legal.html">法律声明</a>
+                        <a class="right-text" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496009">
+                            <span class="footer-info-record">
+                            <i></i>
+                        <span>粤公网安备 44049102496009 号</span>
+                            </span>
+                        </a>
+                        <a class="footer-info-license" target="_blank" href="http://210.76.65.188/">
+                            <i></i>
+                        </a>
+                        <a class="footer-info-wel" target="_blank" href="http://210.76.65.188/webrecord/innernet/Welcome.jsp?bano=4404013010531">
+                            <i></i>
+                        </a>
+                        <a class="footer-info-trust" target="_blank" href="https://credit.szfw.org/CX20151204012550820380.html">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="meizu-right-info">
+                    <a href="" target="_blank" class="subscribe-img1">
+                        <img src="https://fms.res.meizu.com/dms/2019/01/07/26b50023-fde7-4f23-ae32-3aa39585f4c4.png" alt="图片加载失败">
+                        <i></i>
+                    </a>
+                    <a href="" target="_blank" class="subscribe-img2">
+                        <img src="https://fms.res.meizu.com/dms/2019/01/07/33474117-9a2d-455d-a8ff-997355238400.jpg" alt="图片加载失败">
+                        <i></i>
+                    </a>
+                    <a target="_blank" href="https://user.qzone.qq.com/2762957059" class="subscribe-img3">
+                        <i></i>
+                    </a>
+                    <a target="_blank" href="https://weibo.com/meizumobile" class="subscribe-img4">
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

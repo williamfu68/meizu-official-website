@@ -1,0 +1,141 @@
+body {
+    font: 12px Tahoma, Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+    background: #fff;
+}
+
+a {
+    color: #07f;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.container {
+    width: 950px;
+    height: 208px;
+    margin: 0px auto;
+    padding: -3px 0px 0px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header .top li {
+    display: inline;
+}
+
+ul.top {
+    height: 17px;
+    width: 244px;
+    margin: 5px 0px 0px;
+    float: right;
+}
+
+li.welcome {
+    width: 156px;
+    height: 14px;
+}
+
+a.top-link {
+    width: 84px;
+    height: 14px;
+}
+
+.alipay-logo {
+    display: block;
+    width: 114px;
+    position: relative;
+    left: 0;
+    top: 0;
+    float: left;
+    height: 40px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../../images/pay/alipy.png);
+}
+
+.content {
+    padding: 60px 0px 0px 0px;
+}
+
+.main {
+    width: 950px;
+    height: 85px;
+    margin: 0 auto;
+}
+
+.notice {
+    margin-top: 18px;
+    background: #F1FFD6 url(../../images/pay/no.png) -694px -103px no-repeat;
+    min-height: 50px;
+    line-height: 150%;
+    border: 1px #EAEAD7 solid;
+    padding-left: 102px;
+    padding-right: 52px;
+}
+
+div.notice.n-error-m {
+    width: 797px;
+    height: 72px;
+    margin: 15px 0px 0px;
+    padding: 9px 52px 11px 102px;
+}
+
+.n-error-m {
+    background-position: -510px -768px;
+}
+
+.n-error,
+.n-error-m,
+.n-forbidden,
+.n-forbidden-m {
+    border: 1px #F6C8B5 solid;
+    background-color: #FCEEE8;
+}
+
+.h3 {
+    width: 794px;
+    height: 21px;
+    color: #000;
+    padding: 2px 0px 1px;
+}
+
+p.n-explain {
+    width: 794px;
+    height: 18px;
+    color: #808080;
+    margin: 5px 0px 0px;
+}
+
+.copyright,
+.copyright a,
+.copyright a:hover {
+    color: #808080;
+}
+
+.footer {
+    padding: 10px;
+    background-color: #eee;
+    text-align: center;
+    margin-top: 20px;
+    width: 930px;
+    height: 25px;
+    margin: 0 auto;
+    margin: 74px 0px 0px;
+}
+
+div.copyright {
+    width: 930px;
+    height: 17px;
+}

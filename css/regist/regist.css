@@ -1,0 +1,260 @@
+/* 去除部门默认样式  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.clear::before,
+.clear::after {
+    display: table;
+    content: '';
+}
+
+.clear::after {
+    clear: both;
+}
+
+.body {
+    background: none;
+    background-color: #fff;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #515151;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 100%;
+}
+
+.tab-title a {
+    color: #387aff;
+}
+
+#cycode-box2 {
+    background-color: rgba(0, 0, 0, .01);
+}
+
+#cycode-box2>div {
+    float: left;
+}
+
+#cycode-box2 .circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #387aff;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.circle span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #387aff;
+}
+
+#cycode-box2 .text {
+    margin: 11px 0 0 10px;
+}
+
+.geetest {
+    width: 20px;
+    height: 20px;
+    background: url(../../images/regist/base2.png) no-repeat;
+    background-position: 0 41.33858%;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+
+.info {
+    margin-bottom: 12px;
+}
+
+.info .radio {
+    width: 15px;
+    height: 15px;
+    margin: 2px 4px 0 0;
+    float: left;
+}
+
+.info .link {
+    line-height: 22px;
+}
+
+.info a {
+    color: #387aff;
+}
+
+.header {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: auto;
+    padding-top: 28px;
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #515151;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+a.fullBtnBlue {
+    width: 300px;
+    display: block;
+    height: 46px;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+    background-color: #32a5e7;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #387aff;
+}
+
+#selectbox {
+    position: absolute;
+    left: 16px;
+    top: 14px;
+    border: none;
+}
+
+
+/* 登录界面底部 */
+
+.footer {
+    margin-top: 15px;
+}
+
+.footer-inner {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.footer-inner>div {
+    float: left;
+}
+
+.footer-inner-left {
+    height: 50px;
+}
+
+.footer-inner-left ul {
+    height: 50px;
+}
+
+.footer-inner-left li {
+    float: left;
+    border-right: 1px solid #d6d6d6;
+    padding-right: 10px;
+    margin-right: 10px;
+    width: 70px;
+}
+
+.footer-inner-left a {
+    color: #000000;
+}
+
+.footer-inner-left .last {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.footer-inner-center {
+    margin-left: 60px;
+}
+
+.footer-inner-center span {
+    margin-right: 30px;
+}
+
+.footer-inner-center a {
+    color: #fff;
+    display: inline-block;
+    width: 64px;
+    height: 20px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #32a5e7;
+}
+
+.footer-inner-right {
+    margin-left: 100px;
+}
+
+.footer-inner-right div {
+    background: url(../../images/regist/base.png) no-repeat;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.footer-inner-right div:nth-child(1) {
+    background-position: -218px -91px;
+}
+
+.footer-inner-right div:nth-child(1):hover {
+    background-position: -218px -137px;
+}
+
+.footer-inner-right div:nth-child(2) {
+    background-position: -302px -91px;
+}
+
+.footer-inner-right div:nth-child(2):hover {
+    background-position: -302px -137px;
+}
+
+.footer-inner-right div:nth-child(3) {
+    background-position: -344px -91px;
+}
+
+.footer-inner-right div:nth-child(3):hover {
+    background-position: -344px -137px;
+}
+
+.copy {
+    color: #999;
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+.copy a {
+    color: #999;
+}
+
+.copy img {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+}
+
+.copy .touch:hover {
+    color: #000;
+}

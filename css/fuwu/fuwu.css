@@ -1,0 +1,674 @@
+/* 清除样式 */
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.clear::before,
+.clear::after {
+    display: table;
+    content: '';
+}
+
+.clear::after {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 导航栏 */
+
+.top {
+    width: 100vw;
+    height: 82px;
+    background-color: #fff;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.layout-header {
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    border-bottom: 1px solid #efefef;
+}
+
+.layout-header-mid {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    float: left;
+    height: 80px;
+    overflow: hidden;
+}
+
+.header-logo img {
+    max-width: 125px;
+    margin-top: 28px;
+}
+
+.layout-header-service {
+    float: right;
+    height: 80px;
+    margin-top: 1px;
+}
+
+.layout-header-service-item {
+    position: relative;
+    float: left;
+    right: 3px;
+    padding: 26px 8px 0 12px;
+}
+
+.layout-header-service-search {
+    position: relative;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0;
+    margin: 24px 0 0 18px;
+    width: 170px;
+    text-align: right;
+    word-break: keep-all;
+    white-space: nowrap;
+    border: 1px solid rgba(0, 0, 0, .15);
+    line-height: 28px;
+}
+
+.service-input {
+    vertical-align: middle;
+    border: none;
+    outline: 0;
+    width: 125px;
+    height: 20px;
+    margin-left: 15px;
+    transition: width .5s;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+.layout-header-sosuo {
+    width: 17px;
+    margin-top: 7px;
+    margin-right: 6px;
+}
+
+.layout-header-service-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: #666;
+}
+
+.layout-header-service-avatar {
+    width: 100vw;
+    height: 100%;
+}
+
+.service-car {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.service-car-1 {
+    width: 34px;
+    height: 34px;
+    overflow: unset;
+}
+
+.service-car-2 {
+    width: 30px;
+    height: 30px;
+}
+
+.service-car-num {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    height: 16px;
+    min-width: 8px;
+    border-radius: 50%;
+    background: #F10000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+    text-indent: 0;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+.layout-header-nav {
+    float: right;
+    font-size: 14px;
+    position: absolute;
+    width: 720px;
+    height: 80px;
+    line-height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.layout-header-nav a:hover {
+    color: #008cff;
+}
+
+.layout-header-nav-item {
+    float: left;
+    margin: 0 20px 0 15px;
+}
+
+.layout-header-nav-link {
+    color: #333;
+    height: 80px;
+    line-height: 80px;
+}
+
+
+/* 轮播图 */
+
+.slide {
+    width: 1903px;
+    height: 580px;
+    overflow: hidden;
+}
+
+.slide-img {
+    width: 9530px;
+    animation: move 10s infinite linear;
+}
+
+.slide-item {
+    width: 1903px;
+    height: 580px;
+    float: left;
+}
+
+.slide-item:nth-child(1) {
+    background: url(../../images/fuwu/lunbo-1.png) no-repeat center / cover;
+}
+
+.slide-item:nth-child(2) {
+    background: url(../../images/fuwu/lunbo-2.png) no-repeat center / cover;
+}
+
+.slide-item:nth-child(3) {
+    background: url(../../images/fuwu/lunbo-3.png) no-repeat center / cover;
+}
+
+.slide-item:nth-child(4) {
+    background: url(../../images/fuwu/lunbo-4.png) no-repeat center / cover;
+}
+
+.slide-item:nth-child(5) {
+    background: url(../../images/fuwu/lunbo-5.png) no-repeat center / cover;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    13.33% {
+        transform: translateX(0);
+    }
+    23.33% {
+        transform: translateX(-1902px);
+    }
+    36.66% {
+        transform: translateX(-1902px);
+    }
+    46.66% {
+        transform: translateX(-3804px);
+    }
+    56.66% {
+        transform: translateX(-3804px);
+    }
+    69.99% {
+        transform: translateX(-5706px);
+    }
+    79.99% {
+        transform: translateX(-5706px);
+    }
+    93.33% {
+        transform: translateX(-7608px);
+    }
+    100% {
+        transform: translateX(-7608px);
+    }
+}
+
+
+/* 功能菜单栏 */
+
+.menu {
+    width: 100vw;
+    height: 452px;
+    background-color: #fff;
+}
+
+.menu-content {
+    width: 1280px;
+    height: 382px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.menu-top {
+    width: 1240px;
+    height: 209px;
+}
+
+.menu-top li {
+    float: left;
+}
+
+.menu-top a {
+    text-decoration: none;
+    display: inline-block;
+    width: 89px;
+    text-align: center;
+    color: #333;
+    padding: 70px 44px 59px;
+}
+
+.menu-top li span {
+    display: block;
+    width: 51px;
+    height: 51px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* 四个颜色版块 */
+
+.menu-bottom {
+    width: 1240px;
+    height: 173px;
+}
+
+.menu-bottom li a {
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 100%;
+    overflow: hidden;
+}
+
+.menu-bottom li {
+    float: left;
+    width: 301px;
+    height: 173px;
+    text-align: center;
+    margin-right: 11px;
+}
+
+.menu-bottom img {
+    top: 17%;
+    width: 72px;
+    height: 72px;
+    margin-left: -36px;
+    position: absolute;
+    left: 50%;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.service1 {
+    background: #388ded;
+}
+
+.service2 {
+    background: #48bf6c;
+}
+
+.service3 {
+    background: #f6af2a;
+}
+
+.menu-bottom .service4 {
+    margin-right: 0;
+    background: #3ec0d1;
+}
+
+.menu-bottom em {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.menu-bottom span {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+}
+
+
+/* 商品选择栏 */
+
+.product {
+    width: 100vw;
+    height: 705px;
+}
+
+.product-content {
+    width: 1240px;
+    height: 705px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.product-content p {
+    padding: 68px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-box1 a {
+    color: #333;
+}
+
+.product-box1 li {
+    float: left;
+    width: 406px;
+    height: 298px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    margin-right: 11px;
+}
+
+.product-box .product-box1 img {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    transition: all 0.6s;
+}
+
+.product-box .product-box1 img:hover {
+    transform: scale(0.9);
+}
+
+.product-box1 span {
+    display: block;
+    margin-bottom: 27px;
+}
+
+.product-content .last {
+    margin-right: 0;
+}
+
+.product-content .product-box2 li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 70px;
+}
+
+.product-content .product-box2 .last2 {
+    margin-right: 0;
+}
+
+.video-icon {
+    content: '';
+    position: absolute;
+    top: 54px;
+    left: 165px;
+    display: block;
+    width: 51px;
+    height: 51px;
+    background: url(../../images/fuwu/bofang.png);
+}
+
+.video-tit {
+    position: absolute;
+    top: 56px;
+    left: 234px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.video-tit1 {
+    position: absolute;
+    top: 83px;
+    left: 234px;
+    color: #fff;
+}
+
+.fuwu {
+    width: 100vw;
+    height: 696px;
+    background: #fff;
+}
+
+.fuwu-content {
+    width: 1240px;
+    height: 696px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.fuwu-title {
+    padding: 68px 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.fuwu-content .vip-list li {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 245px;
+}
+
+.fuwu-content .vip-list .vip1,
+.fuwu-content .vip-list .vip3 {
+    width: 56%;
+}
+
+.fuwu-content .vip-list .vip2,
+.fuwu-content .vip-list .vip4 {
+    width: 44%;
+}
+
+.vip-icon {
+    float: left;
+    width: 84px;
+    height: 90px;
+    margin-top: 6px;
+    margin-right: 46px;
+}
+
+.vip-icon1 {
+    background-image: url(../../images/fuwu/fuwu-1.jpg);
+}
+
+.vip-icon2 {
+    background-image: url(../../images/fuwu/fuwu-2.jpg);
+}
+
+.vip-icon3 {
+    background-image: url(../../images/fuwu/fuwu-3.jpg);
+}
+
+.vip-icon4 {
+    background-image: url(../../images/fuwu/fuwu-4.jpg);
+}
+
+.vip-info {
+    float: left;
+    width: 387px;
+}
+
+.vip-tit {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.vip-tit1 {
+    line-height: 24px;
+    margin-bottom: 13px;
+}
+
+.link a {
+    color: #008cff;
+}
+
+.question {
+    width: 100vw;
+    height: 398px;
+}
+
+.question-content {
+    width: 1240px;
+    min-width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+    height: 398px;
+}
+
+.question-content p {
+    padding: 68px 0;
+    margin-top: -6px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.question-item {
+    float: left;
+    width: 248px;
+    height: 238px;
+    text-align: center;
+}
+
+.question-title {
+    position: relative;
+    display: block;
+    padding-bottom: 13px;
+    color: #333;
+}
+
+.hengxian {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 14px;
+    height: 1px;
+    background: #929292;
+    margin-left: -7px;
+}
+
+.question-detail {
+    height: auto;
+    padding-top: 13px;
+    line-height: 27px;
+}
+
+.question-detail a {
+    color: #333;
+    font-size: 14px;
+}
+
+.question-detail a:hover {
+    color: #388ded;
+}
+
+.tel {
+    width: 100vw;
+    height: 328px;
+    background-color: #fff;
+}
+
+.tel-content {
+    width: 1240px;
+    min-width: 1240px;
+    height: 328px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.tel-content p {
+    padding: 68px 0 36px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tel-ul li {
+    float: left;
+    width: 25%;
+    /* height: 194px; */
+    text-align: center;
+    padding-bottom: 68px;
+}
+
+.tel-a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 26px 0;
+    cursor: pointer;
+    margin-bottom: -20px;
+    color: #333;
+}
+
+.tel-a:hover {
+    color: #388ded;
+}
+
+.tel-icon {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.tel-title {
+    display: block;
+    font-size: 16px;
+    padding-top: 12px;
+    margin-bottom: 7px;
+}
+
+.tel-ul i {
+    font-size: 14px;
+    color: #999;
+    margin-top: -4px;
+}

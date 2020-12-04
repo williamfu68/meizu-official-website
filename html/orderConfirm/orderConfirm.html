@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>确认订单-魅族商城</title>
+    <link href="//store.res.meizu.com/layout/img/favicon-90c2e618ff.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/orderConfirm/orderConfirm.css">
+    <script src="../../js/public/jquery-3.4.1.min.js"></script>
+    <script src="../../js/orderConfirm/orderConfirm.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="meizu-header">
+        <div class="meizu-header-inner clear">
+            <div class="meizu-header-logo">
+                <a href="">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAAuCAYAAAABQwQEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0FCMzYyNjc5MTE4MTFFQTkyOTE5MDU4QTAwMjNCOTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0FCMzYyNjg5MTE4MTFFQTkyOTE5MDU4QTAwMjNCOTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDVBNDg5NDkxMEIxMUVBOTI5MTkwNThBMDAyM0I5MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQUIzNjI2NjkxMTgxMUVBOTI5MTkwNThBMDAyM0I5MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pg9i2hkAAAX9SURBVHja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"
+                        alt="">
+                </a>
+            </div>
+            <div class="meizu-header-crumbs-txt">
+                <ul clear>
+                    <li>购物车</li>
+                    <li class="active active2">确认订单</li>
+                    <li>在线支付</li>
+                    <li>完成</li>
+                </ul>
+            </div>
+            <div class="meizu-header-right">
+                <a href="">我的订单</a>
+                <a href="" class="store">我的商城
+                    <i></i>
+                </a>
+                <ul class="meizu-header-dropdown">
+                    <li><a href="https://me.meizu.com/member/address/index">地址管理</a></li>
+                    <li><a href="https://me.meizu.com/member/favorite/index">我的收藏</a></li>
+                    <li><a href="https://mcycle.meizu.com/page/balance_log">我的惠购金</a></li>
+                    <li><a href="https://me.meizu.com/member/advice/index">问题反馈</a></li>
+                    <li><a href="javascript:window.location.href='http://store.meizu.com/member/logout.htm?useruri='+ encodeURIComponent(encodeURIComponent(window.location.href));">退出</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容区 -->
+    <div class="meizu-content">
+
+        <!-- order-address -->
+        <div class="order-address">
+            <div class="order-address-title">收货人信息</div>
+            <div class="order-address-list">
+                <ul class="clear">
+                    <li>
+                        <div class="order-address-box">
+                            <div class="order-box-top">
+                                <span class="name">张三</span>
+                                <span class="tel">12345678</span>
+                            </div>
+                            <div class="order-box-content">
+                                四川省成都市武侯区国信安培训基地
+                            </div>
+                            <div class="order-box-checked"></div>
+                            <div class="order-box-option">
+                                <span>修改</span>
+                                <span>删除</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="order-address-box secondary">
+                            <div class="order-add-icon"></div>
+                            <div class="order-add-text">添加新地址</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- order-product -->
+        <div class="order-product">
+            <div class="order-product-title">确认订单信息</div>
+            <div class="order-product-list">
+                <table class="order-product-table" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="thead-name">供应商：魅族</div>
+                            </th>
+                            <th class="thead-secondary">单价</th>
+                            <th class="thead-secondary">数量</th>
+                            <th class="thead-secondary">小计</th>
+                            <th class="thead-secondary">配送方式</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="" class="tbody-goods-item">
+                                    <img src="https://openfile.meizu.com/group1/M00/08/10/Cgbj0F8jhJmAHozqAAzMHSa2P9I796.png" alt="">
+                                    <div class="goods-info">
+                                        <a href="">
+                                            <p class="goods-name">魅族 17</p>
+                                            <p class="goods-desc">全网通公开版 AG星际灰 8+128GB</p>
+                                        </a>
+                                    </div>
+                                </a>
+                            </td>
+                            <td>￥3699.00</td>
+                            <td>1</td>
+                            <td class="price">￥3699.00</td>
+                            <td>快递配送：运费 <span class="price">￥0.00</span></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <div class="tfoot-goods-info">
+                                    <div class="tfoot-invoice-type">发票类型：电子发票</div>
+                                    <span class="tfoot-invoice-edit">修改</span>
+                                    <div class="tfoot-invoice-info">发票抬头：默认为收货人姓名</div>
+                                </div>
+                            </td>
+                            <td colspan="2" class="total-price">合计：<span class="big-price">￥3699.00</span></td>
+                        </tr>
+                        <tr class="remark">
+                            <td colspan="5">
+                                <span class="table-remark">备注：</span>
+                                <textarea class="table-remark-textarea" maxlength="45"></textarea>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <!-- order-discount -->
+        <div class="order-discount">
+            <div class="order-discount-title">使用优惠抵扣</div>
+            <div class="order-discount-list">
+                <div class="order-discount-header">
+                    <span class="order-header-title">- 使用回购金</span>
+                </div>
+                <div class="order-discount-content">
+                    <div class="order-content-title">
+                        <span class="discount-number">我的回购金额：</span>
+                        <span class="discount-price">￥0.00</span>
+                        <span class="discount-desc">（使用说明：系统会根据您选购的商品自动计算出最大可以用回购金数量，以及可享受的魅族商城补贴，该补贴不可退。）</span>
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="radio" name="radio" value = "1" checked>
+                            可使用￥0.00元回购金
+                        </label>
+                    </div>
+                    <div>
+                        <label for="">
+                        <input type="radio" name="radio" value = "2">
+                        暂不使用回购金
+                    </label>
+                    </div>
+                </div>
+                <div class="order-discount-footer">
+                    <span class="discount-footer-text">+使用礼品卡</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- order-payment -->
+        <div class="order-payment">
+            <div class="order-payment-title">选择支付方式</div>
+            <div class="order-payment-list">
+                <div class="quick-pay clear">
+                    <div class="quick-pay-title">快捷支付</div>
+                    <div class="quick-pay-list">
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment" checked>
+                            </div>
+                            <div class="quick-pay-list-img quick-pay-img1"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img quick-pay-img2"></div>
+                        </div>
+                        <div class="quick-pay-list-item more">
+                            更多支付方式
+                        </div>
+                    </div>
+                    <div class="quick-pay-desc">
+                        <div class="quick-pay-info">
+                            <span class="quick-pay-info-title">￥1261.36 &times; 3期</span>
+                            <span class="quick-pay-info-desc">含手续费 ￥28.36/期</span>
+                        </div>
+                        <div class="quick-pay-info">
+                            <span class="quick-pay-info-title">￥644.24 &times; 6期</span>
+                            <span class="quick-pay-info-desc">含手续费 ￥27.74/期</span>
+                        </div>
+                        <div class="quick-pay-info">
+                            <span class="quick-pay-info-title">￥331.36 &times; 12期</span>
+                            <span class="quick-pay-info-desc">含手续费 ￥23.11/期</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="online-bank clear">
+                    <div class="online-bank-title">网上银行</div>
+                    <div class="online-bank-list">
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img1"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img2"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img3"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img4"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img5"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img6"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img7"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img8"></div>
+                        </div>
+                        <div class="quick-pay-list-item">
+                            <div class="quick-pay-list-radio">
+                                <input type="radio" name="quick-payment">
+                            </div>
+                            <div class="quick-pay-list-img online-bank-img9"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- total-container -->
+        <div class="total-container">
+            <div class="total-content">
+                <div class="total-row">
+                    <span>总金额</span>
+                    <span class="price secondary-price">￥3699.00</span>
+                </div>
+                <div class="total-row border">
+                    <span>运费</span>
+                    <span class="price secondary-price">￥0.00</span>
+                </div>
+                <div class="total-row">
+                    <span>应付：</span>
+                    <span class="price big-price">￥3699.00</span>
+                </div>
+                <div class="total-row clear">
+                    <div class="btn-pay">
+                        <a href="../../html/pay/pay.html" target="_blank" style="color:#fff">下单并支付</a>
+                    </div>
+                </div>
+                <div class="total-row">
+                    <span class="total-tips">该订单含付款减库存商品，支付完成后才会为您预留库存！</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部信息栏 -->
+    <div class="meizu-footer-container">
+        <div class="meizu-footer-wrap">
+            <div class="meizu-top-row">
+                <div class="meizu-top-service">
+                    <ul class="clear">
+                        <li>
+                            <a target="_blank" href="http://service.meizu.com/help/delivery.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/2c69bf7c-2d29-4fd4-852e-0aa497f36f51.png" alt="图片加载失败">
+                                <span>满80免运费</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://store.meizu.com/marrive/summary.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/d28eac8b-b915-49dc-9dbd-80884a07d44f.png" alt="图片加载失败">
+                                <span>100+ 城市次日送达</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/b21f3e65-f7f4-4693-914c-c070faf96770.png" alt="图片加载失败">
+                                <span>7天无理由退货</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/1998f0da-a439-4e07-9736-e6a1c39fb0ae.png" alt="图片加载失败">
+                                <span>15天换货保障</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/420825c1-4763-436d-b3e1-721651ccc70c.png" alt="图片加载失败">
+                                <span>1年免费保修</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://127.0.0.1:5500/index.html">
+                                <img src="https://fms.res.meizu.com/dms/2018/07/13/1c5cfeff-1b35-499e-bc2a-1fd29305be69.png" alt="图片加载失败">
+                                <span>上门快修</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="meizu-top-contact">
+                    <span>周一至周日 8:00-20:00</span>
+                    <p>400-788-3333</p>
+                    <a href="http://url.meizu.com/ols_PC" target="_blank">在线客服</a>
+                </div>
+            </div>
+            <div class="meizu-bottom-row">
+                <div class="meizu-left-info">
+                    <ul class="clear">
+                        <li><a target="_blank" href="https://www.meizu.com/about.html#know">了解魅族</a></li>
+                        <li><a target="_blank" href="http://hr.meizu.com/">加入我们</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/about.html#contact">联系我们</a></li>
+                        <li><a target="_blank" href="https://www.flyme.cn/index.html">Flyme</a></li>
+                        <li><a target="_blank" href="http://bbs.meizu.cn/">魅族社区</a></li>
+                        <li><a target="_blank" href="https://meizu.tmall.com/">天猫旗舰店</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/feedback.html">问题反馈</a></li>
+                        <li><a target="_blank" href="https://www.meizu.com/authorization/index.html">线上销售授权名单公示</a></li>
+                        <li><a target="_blank" href="https://cimg2.res.meizu.com/www/meizu/publish_license.pdf">出版物经营许可证</a></li>
+                        <li class="last">
+                            <span class="icon-lang">
+                            <a target="_blank" href="https://www.meizu.com/#">
+                                <i></i>
+                                <span>简体中文</span>
+                            </a>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="meizu-left-copy">
+                        <span class="left-text">&copy; 2020 Meizu Telecom Equipment Co.,Ltd. All rights reserved.</span>
+                        <a target="_blank" href="https://beian.miit.gov.cn/#/Integrated/index">粤ICP备13003602号</a>
+                        <a target="_blank" href="https://www.meizu.com/static/footer/images/icp2.jpg">合字B2-20170010 </a>
+                        <a target="_blank" href="https://www.meizu.com/static/footer/images/com_licence.jpg">营业执照</a>
+                        <a target="_blank" href="https://www.meizu.com/legal.html">法律声明</a>
+                        <a class="right-text" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44049102496009">
+                            <span class="footer-info-record">
+                                <i></i>
+                            <span>粤公网安备 44049102496009 号</span>
+                            </span>
+                        </a>
+                        <a class="footer-info-license" target="_blank" href="http://210.76.65.188/">
+                            <i></i>
+                        </a>
+                        <a class="footer-info-wel" target="_blank" href="http://210.76.65.188/webrecord/innernet/Welcome.jsp?bano=4404013010531">
+                            <i></i>
+                        </a>
+                        <a class="footer-info-trust" target="_blank" href="https://credit.szfw.org/CX20151204012550820380.html">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="meizu-right-info">
+                    <a href="" target="_blank" class="subscribe-img1">
+                        <img src="https://fms.res.meizu.com/dms/2019/01/07/26b50023-fde7-4f23-ae32-3aa39585f4c4.png" alt="图片加载失败">
+                        <i></i>
+                    </a>
+                    <a href="" target="_blank" class="subscribe-img2">
+                        <img src="https://fms.res.meizu.com/dms/2019/01/07/33474117-9a2d-455d-a8ff-997355238400.jpg" alt="图片加载失败">
+                        <i></i>
+                    </a>
+                    <a target="_blank" href="https://user.qzone.qq.com/2762957059" class="subscribe-img3">
+                        <i></i>
+                    </a>
+                    <a target="_blank" href="https://weibo.com/meizumobile" class="subscribe-img4">
+                        <i></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
